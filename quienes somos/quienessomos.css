@@ -1,0 +1,93 @@
+.lekton-regular {
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lekton-bold {
+  font-family: "Lekton", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lekton-regular-italic {
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family:"lekton", monospace;
+}
+#cabecera{
+   background-color:#151524;
+  height: 100px;
+  text-align: left;
+  align-content: center;
+  color:white;
+ 
+
+ 
+  
+
+}
+
+#contenido{
+   height: 750px;
+  color:white;
+  
+  background-image:  url('../arcade/imagenes/fondo7.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center;
+
+}
+#pie{
+   background-color:#151524;
+  height: 80px;
+  text-align: center;
+  align-content: center;
+  color:white;
+  
+
+}
+.enlace{
+  box-shadow: 0 4px 12px rgba(1, 66, 136, 0.6);
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+ margin: 0 23px;
+  text-decoration: none;
+   padding: 10px 20px;
+    color:  rgba(0, 123, 255, 0.6);
+     border: 2px solid transparent;
+}
+.enlace:hover {
+  box-shadow: 0 6px 18px rgba(0, 94, 194, 0.6);
+  color: white;
+   border-color: rgba(1, 54, 110, 0.6);
+}
+.titulo{
+  margin-left: 100px;
+  
+}
+h2{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
+}
+#nombres{
+
+   background-color:#151524;
+   margin: 0px 100px 100px 100px;
+}
+#relleno{
+ background-color:#151524;
+   margin: 0px 100px 100px 100px;
+  
+}
