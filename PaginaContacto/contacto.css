@@ -19,9 +19,9 @@
 
 
 *{
-   margin: 0px;
-   padding: 0px;
-   font-family:"lekton", monospace;
+margin: 0px;
+padding: 0px;
+font-family:"lekton", monospace;
 }
 #cabecera{
     background-color:#151524;
@@ -29,11 +29,8 @@
   text-align: left;
   align-content: center;
   color:white;
- 
-
-  
-
 }
+
 
 #contenido{
 
@@ -49,7 +46,7 @@
 }
 #pie{
     background-color:#151524;
-  height: 80px;
+  height: 100%;
   text-align: center;
   align-content: center;
   color:white;
@@ -60,11 +57,11 @@
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
- margin: 0 23px;
+  margin: 0 23px;
   text-decoration: none;
-   padding: 10px 20px;
-    color:  rgba(0, 123, 255, 0.6);
-     border: 2px solid transparent;
+  padding: 10px 20px;
+  color:  rgba(0, 123, 255, 0.6);
+  border: 2px solid transparent;
 }
 .enlace:hover {
   box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
@@ -81,9 +78,27 @@ h2{
     justify-content: center;
       align-items: center;
 }
-#juegos{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-      align-items: center;
+input, select, textarea {
+  background-position: 50% 50%;
+  background-image: url("../arcade/imagenes/fondo7.jpg");
+  color: cornflowerblue;  
 }
+#horarios {
+  text-align: left;
+}
+
+#redes{
+  margin-top:10%;
+  transition: transform 5s ease;
+}
+p {
+  color:midnightblue;
+  text-align: left;
+  font-size: 25px;
+}
+label {
+  align-content: center;
+  color: cyan;
+  font-size: 25px;
+}
+
