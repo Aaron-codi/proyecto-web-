@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.escenario{
+    width: 800px;
+    height: 600px;
+    margin: calc(50vh - 300px) auto 0;
+    border: 6px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.marcador{
+    font-family: monospace;
+    font-size: 150px;
+    text-align: center;
+    line-height: 1;
+
+    width: 200px;
+    position: absolute;
+    top: 40px;
+}
+
+.marcador1{
+    left: 100px
+}
+.marcador2{
+    right: 100px;
+}
+
+.pala{
+    width: 14xp;
+    height: 100px;
+    background: white;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.pala1{
+    left: 40px;
+}
+
+.pala2{
+    left: 760px;
+}
+
+.red{
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: calc(50% -3px);
+    border-width: 0px;
+    border-left: 6px dotted white;
+}
+
+.pelota{
+background: white;
+width: 24px;
+height: 24px;
+position: absolute;
+bottom: 300px;
+left: 400px;
+transform: translate(-50%, 50%);
+border-radius: 50%;
+}

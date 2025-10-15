@@ -24,20 +24,20 @@
    font-family:"lekton", monospace;
 }
 #cabecera{
-   background-color:#151524;
+    background-color:#151524;
   height: 100px;
   text-align: left;
   align-content: center;
   color:white;
  
 
- 
   
 
 }
 
 #contenido{
-   height: 750px;
+
+  height: 750px;
   color:white;
   
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
@@ -48,7 +48,7 @@
 
 }
 #pie{
-   background-color:#151524;
+    background-color:#151524;
   height: 80px;
   text-align: center;
   align-content: center;
@@ -57,7 +57,7 @@
 
 }
 .enlace{
-  box-shadow: 0 4px 12px rgba(1, 66, 136, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
  margin: 0 23px;
@@ -67,7 +67,7 @@
      border: 2px solid transparent;
 }
 .enlace:hover {
- box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
   color: white;
    border-color: #007bff;
 }
@@ -75,19 +75,7 @@
   margin-left: 100px;
   
 }
-h2{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-      align-items: center;
-}
-#nombres{
+#galaga{
 
-   background-color:#151524;
-   margin: 0px 100px 100px 100px;
-}
-#relleno{
- background-color:#151524;
-   margin: 0px 100px 100px 100px;
-  
+    
 }
