@@ -11,18 +11,21 @@
 </head>
 <body>
     <div id="cabecera">
+        <h1 class="titulo">Contacto</h1>
     </div>
     <div id="contenido">
-        <form action="#" method="post">
-            <h2>Contacto</h2>
+        <br><br>
+        <div id="formulario">
+            <form action="#" method="post">
+            <h2>Ingrese su datos</h2>
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" class="input"  name="nombre" required><br><br>
+            <input type="text" id="nombre" class="input"  name="nombre" required ><br><br>
 
-            <label for="ape">Apellido:</label>
+            <label for="ape">Apellido:</label><br>
             <input type="text" id="ape" name="apellido"><br><br>
 
             <label for="mail">Correo Electrónico:</label><br>
-            <input type="email" id="mail" name="email" required><br><br>
+            <input type="email" id="mail" name="email" required maxlength="40"><br><br>
 
             <label for="pais">Pais:</label>
             <select id="pais" name="Pais">
@@ -38,14 +41,21 @@
             </select><br><br>
 
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
+            <br>
             <label for=""></label>
             <input type="submit" value="Enviar">
 
             
         </form>
+
+        </div>
         
+        
+         
+        
+    </div>
+    <div id="pie"> 
         <div id="redes">
 
             <p>Siguenos</p>
@@ -59,10 +69,13 @@
                 <img src="../PaginaContacto/imagenes/arcadeSitioOficial.png" height="40" width="40" alt="Sitio Oficial Arcade90" title="Pagina oficial Arcade" >
             </a>
             
-        </div>   
-        
-    </div>
-    <div id="pie"> 
+        </div>  
+        <div id="enlaces">
+            <a href="../quienes somos/quienessomos.html" class="enlace">¿Quienes somos?</a>
+            <a href="contacto.html" class="enlace">Contacto</a><br>
+
+
+        </div>
         <div id="horarios">
             <h4>Horarios de atencion:</h4>
         <ul>
@@ -70,9 +83,9 @@
             <li>viernes y sabado de 10:00hs a 21:00hs </li>
         </ul>
         </div>
-        <hr> <br>  
-            <a href="../quienes somos/quienessomos.html" class="enlace">¿Quienes somos?</a>
-            <a href="contacto.html" class="enlace">Contacto</a><br>
+        <!--<hr>-->
+        <br>  
+        
             
         
     </div>
