@@ -29,6 +29,7 @@
   text-align: left;
   align-content: center;
   color:white;
+ 
 
   
 
@@ -36,7 +37,7 @@
 
 #contenido{
 
-  height: 700px;
+  height: 750px;
   color:white;
   
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
@@ -72,35 +73,22 @@
 }
 .titulo{
   margin-left: 100px;
-  text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
-}
-#juego{
-  position:absolute;
-  left: 400px;
-  top:130px;
-}
-#escenario{
- border:5px solid gray;
- border-radius: 2px;
-  background-color: black;
+    text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
+
 }
 h2{
   font-size: 25px;
-  text-shadow: 1px 1px 3px rgba(211, 208, 208, 0.9);
+  text-shadow: 2px 1px 3px rgba(85, 82, 82, 0.9);
   text-align: center;
   color: #151524;
   background-color: aliceblue;
     border-radius: 20px;
- margin:0 100px 0 100px;
+ margin:0 500px 0 500px;
 
 }
-#scores{
-  font-size: 20px;
-  text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
-  border-radius: 40px;
-   margin-right: 400px;
-   text-decoration: none;
-   padding: 10px 20px;
-   background-color: rgb(3, 3, 34);
+#juegos{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
 }

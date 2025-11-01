@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-            <link rel="stylesheet" href="../quienes somos/quienessomos.css" type="text/css" media="screen" />
+    <title>Mini galaga</title>
+            <link rel="stylesheet" href="../mini-galaga/mini-galaga.css" type="text/css" media="screen" />
          <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,22 +12,35 @@
 </head>
 <body>
     <div id="cabecera" >
-            <h1>Mini Galaga</h1>
+            <h1 class="titulo">Mini Galaga</h1>
         </div>
 <div id="contenido" >
-           <div class="escenario">
-           <div class="nave"></div>   
-           <div class="objetos"></div>
-           <div class="puntuacion"></div>
-        </div>
-        </div>
+
+    <div id="juego">
+                    <h2>Mini Galaga</h2>
+                    <br>
+                    <div id="scores"></div>
+        <canvas id="escenario">       
+        
+            
+        </canvas>
+
+
+    </div>
+
+          
+</div>
 
     <div id="pie" >
             <a href="../arcade/Arcade.html" class="enlace">Home</a>
-            <a href="" class="enlace">Contacto</a>
+            <a href="../PaginaContacto/contacto.html" class="enlace">Contacto</a>
             <a href="../quienes somos/quienessomos.html" class="enlace">¿Quienes somos?</a>
 
         </div>
-    
+    <script type="module" src="mini-galaga.js"></script>
 </body>
 </html>
+
+
+
+
