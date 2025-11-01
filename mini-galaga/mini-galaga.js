@@ -254,3 +254,11 @@ function gameOver() {
   context.font = "20px Lekton";
   context.fillText("Puntuación: " + puntuacion, board.width / 2, board.height / 2 + 50);
 }
+document.getElementById("reset");
+function reiniciar(){
+    setTimeout(() => {
+    location.reload();
+  }, 400);
+  
+}
+  window.reiniciar = reiniciar;
