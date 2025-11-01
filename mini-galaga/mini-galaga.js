@@ -143,7 +143,7 @@ for(let i = 0; i< bulletArray.length; i++) {
     bulletArray.shift();//elemina el primer elemento del array.
  }
  //agrega el score en la pantalla
-    document.getElementById("scores").innerHTML="<p>Score:"+puntuacion+"</p>" ; 
+    document.getElementById("scores").innerHTML="<p>score:"+puntuacion+"</p>" ; 
 
 }
 

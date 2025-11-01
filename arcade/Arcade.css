@@ -25,21 +25,27 @@
 }
 #cabecera{
     background-color:#151524;
-  height: 100px;
+  height: 65px;
   text-align: left;
   align-content: center;
-  color:white;
+  color:rgb(244, 245, 205);
  
-
-  
+display: flex;
+justify-content: space-between;
+  padding-top: 25px;
 
 }
 
 #contenido{
 
-  height: 750px;
+  height: 650px;
   color:white;
-  
+ 
+   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 90px;
+
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -48,11 +54,14 @@
 
 }
 #pie{
-    background-color:#151524;
-  height: 80px;
-  text-align: center;
-  align-content: center;
-  color:white;
+   background-color: #151524;
+  height: 110px;              
+  display: flex;
+  align-items: center;       
+  justify-content: space-around;
+  padding: 0 20px 0 30px;           
+  box-sizing: border-box;
+ color: white;
   
 
 }
@@ -71,24 +80,123 @@
   color: white;
    border-color: #007bff;
 }
+#horarios {
+   display: flex;
+ flex-direction: column;      
+  justify-content: center;    
+  align-items: flex-end;       
+  gap: 6px;                   
+  align-self: center;
+    margin-right: 0;
+ flex: 0 0 auto;
+}
+#horarios h4 {
+margin: 0 0 6px 0;
+  align-self: center;      
+  width: 100%;             
+  text-align: center; 
+}
+
+#horarios ul {
+  margin: 0;
+  padding-left: 1em;         
+  list-style-position: inside; 
+}
+
+#horarios ul li {
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+#redes{
+      display: flex;
+   
+  align-items:center;      
+  margin-left: 20px;
+    justify-content: flex-start; 
+  flex: 0 0 auto;             
+
+   gap: 12px;    
+
+ 
+}
+p {
+  color:rgb(255, 255, 255);
+  text-align: left;
+  font-size: 25px;
+  transition: text-decoration 0.5s ease;
+}
+p:hover{
+   text-decoration: underline 2px rgba(0, 123, 255, 0.6);
+  color: white;
+   border-color: #007bff;
+   text-decoration-line: discrete;
+}
 .titulo{
-  margin-left: 100px;
-    text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
+  font-family: "Press Start 2P", monospace;
+  margin-left: 50px;
+    text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
 
 }
 h2{
-  font-size: 25px;
-  text-shadow: 2px 1px 3px rgba(85, 82, 82, 0.9);
-  text-align: center;
-  color: #151524;
-  background-color: aliceblue;
-    border-radius: 20px;
- margin:0 500px 0 500px;
 
+
+font-size: 33px;
+  color: #64edff;
+  text-shadow: 0 0 10px #8c00ff;
+  margin-bottom: 25px;
 }
 #juegos{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-      align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 25px;
+ 
+}
+.game {
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.18);
+}
+.game:hover{
+ 
+   box-shadow: 0px 1px 14px #9218f5;
+}
+.game img {
+  width: 270px;
+  border-radius: 10px;
+  display: block;
+}
+.game img:hover{
+    transform: scale(1.11);
+  box-shadow: 0 0 15px #50a0fa6c, 0 0 25px #8c00ff7c;
+    cursor: pointer;
+}
+.menu{
+    margin: 40px auto;
+  padding: 35px 50px;
+  background: rgba(0, 0, 0, 0.363);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  width: fit-content;
+  text-align: center;
+  border: 2px solid #fdff979d;
+  box-shadow: 0 0 20px #9554ffbb;
+}
+.menu::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    transparent 0px,
+    transparent 2px,
+    rgba(255,255,255,0.03) 3px
+  );
+  pointer-events: none;
+  border-radius: inherit;
+}
+.i{
+  justify-content: center;
+  padding-right: 30px;
 }
