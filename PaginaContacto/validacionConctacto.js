@@ -1,11 +1,12 @@
 
 function Campos(){
-    var nom=document.getElementById("nombre").value;
-    var ape=document.getElementById("ape").value;
-    var email=document.getElementById("mail").value;
-    var tel=document.getElementById("tel").value;
-    var pais=document.getElementById("pais").value;
+    var nom=document.getElementById("nombre").value.trim();
+    var ape=document.getElementById("ape").value.trim();
+    var email=document.getElementById("mail").value.trim();
+    var tel=document.getElementById("tel").value.trim();
+    var pais=document.getElementById("pais").value.trim();
     var mensaje=document.getElementById("mensaje").value;
+    var archv=document.getElementById("archivo").value;
     var error=document.getElementById("error");
 
 
@@ -14,11 +15,22 @@ function Campos(){
         }
         else if(nom !=="" && ape!=="" && email !=="" && mensaje !=="" && tel !==""){
             error.innerHTML="REVISE EN CASO DE ERRORES EN LOS CAMPOS";
-            Nombre(nom);
-            Ape(ape);
-            Email(email);
-            Tel(tel);
-            Pais(pais, tel);
+            var n=Nombre(nom);
+            var a=Ape(ape);
+            var e=Email(email);
+            var p=Pais(pais,tel);
+            if(n && a && e && p){
+                error.innerHTML="FORMULARIO ENVIADO CORRECTAMENTE. ¡GRACIAS POR CONTACTARNOS!";
+                document.getElementById("nombre").value="";
+                document.getElementById("ape").value="";
+                document.getElementById("mail").value="";
+                document.getElementById("tel").value="";
+                document.getElementById("mensaje").value="";
+                document.getElementById("pais").value="";
+                document.getElementById("archivo").value="";
+
+            }
+                
     }
 }
 
@@ -34,7 +46,7 @@ function Nombre(nom){
     }
     else {
         if(caracteres.test(nom)){
-            n.innerHTML="";
+            return true;
         }
         else{
             n.innerHTML="<ul><li>NO debe tener caracteres especiales</li></ul>";
@@ -51,7 +63,7 @@ function Ape(ape){
     }
     else {
         if(caracteres.test(ape)){
-            a.innerHTML="";
+            return true;
         }
         else{
             a.innerHTML="<ul><li>NO debe tener caracteres especiales</li></ul>";
@@ -69,7 +81,8 @@ function Email(email){
 
     if(caracteres.test(email)){
         if(proveedores.includes(dominio)) {
-        m.innerHTML = "";
+            m.innerHTML = "";
+            return true;
         } 
         else {
             m.innerHTML = "<ul><li>El correo que ingreso es desconocido, por favor ingrese el proveedor correctamente para evitar errores</li></ul>";
@@ -82,19 +95,59 @@ function Email(email){
     
 
 }
+function Pais(pais, tel){
+    telError=document.getElementById("telERROR"); 
+    paisError=document.getElementById("paisERROR");
+    var p1=-1;
+    paises=["Argentina", "Brasil", "Chile", "Colombia", "Mexico", "Peru", "Uruguay", "Venezuela", "Otro"];
+        
 
-function Tel(){
-    t=document.getElementById("telERROR");
-    
-    if(tel.value.startsWith("+299")){
-        resp.innerHTML="Por favor ingrese un numero de telefono valido";
+        if (pais =="") {
+            paisError.innerHTML = "<ul><li>Por favor seleccione un país</li></ul>";
+            telError.innerHTML = "";
+            return false;
+            }
+        else {
+            for(var i=0; i<paises.length; i++){
+                if(pais==paises[i]) {
+                    p1=i;
+                    break;
+                }
+            }
+            var p2=Tel(tel);
+            if(p1==8){
+                paisError.innerHTML ="<ul><li>Pais seleccionado: Otros </li></ul>";
+                telError.innerHTML ="<ul><li>Ingrese correctamente el prefijo de su pais, ya que no esta registrado en nuestro sistema</li></ul>";
+            }
+            else if (p1 == -1 || p2 == -1) {
+                paisError.innerHTML = "<ul><li>País o prefijo desconocido</li></ul>";
+                telError.innerHTML = "<ul><li>Verifique que ambos existan y estén escritos correctamente</li></ul>";
+            } 
+            else if(p1==p2){
+                telError.innerHTML ="";
+                paisError.innerHTML ="";
+                return true;
+            }
+            else {
+                paisError.innerHTML = "<ul><li>El país no coincide con el prefijo ingresado</li></ul>";
+                telError.innerHTML = "<ul><li>El prefijo no corresponde con el país seleccionado</li></ul>";
+            }
+        }
+}
+function Tel(tel){
+    var numeros=/^[0-9+]+$/
+    telefonos=["+54", "+55", "+56", "+57", "+52", "+51", "+598", "+58"];
+    if((numeros.test(tel)) && (tel.startsWith("+"))) {
+        for(var i=0; i<telefonos.length; i++){
+            if(tel.startsWith(telefonos[i])) {
+                return i;
+            }
+        }
+    }
+    else {
+        telError.innerHTML ="<ul><li>El número de teléfono solo puede contener números y el símbolo + al inicio</li></ul>";
     }
 
-}
-
-function Pais(){
-    if(!pais.value.includes("Argentina")){
-                resp.innerHTML="Por favor ingrese un numero de telefono valido";
-            }
+    return -1;
 }
 
