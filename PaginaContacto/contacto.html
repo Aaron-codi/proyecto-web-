@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../PaginaContacto/contacto.css" type="text/css" media="screen" />
+    <title>Mini Arcade</title>
+    <link rel="stylesheet" href="../PaginaContacto/contacto.css" type="text/css" media="screen">
     <script src="validacionConctacto.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div id="cabecera">
@@ -40,20 +38,21 @@
             
             <label for="pais">Pais:</label>
             <select  id="pais" name="Pais">
-                <option value="argentina">Argentina</option>
-                <option value="brasil">Brasil</option>
-                <option value="chile">Chile</option>
-                <option value="colombia">Colombia</option>
-                <option value="mexico">México</option>
-                <option value="peru">Perú</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="venezuela">Venezuela</option>
-                <option value="otro">Otro</option>
+                <option value="" selected disabled>Seleccione su país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Mexico">México</option>
+                <option value="Peru">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Otro">Otro</option>
             </select><br>
-            <span id="paisERROR">D</span><br><!--span para mensajes de error-->
+            <span id="paisERROR"></span><br><!--span para mensajes de error-->
 
             <label for="tel">Telefono:</label><br>
-            <input type="number" id="tel" name="telefono" maxlength="40"><br>
+            <input type="tel" id="tel" name="telefono"  maxlength="15"><br>
             <span  id="telERROR"></span><br><!--span para mensajes de error-->
 
             <label for="mail">Correo Electrónico:</label><br>
@@ -64,15 +63,15 @@
 
             <label for="mensaje">Mensaje:</label><br>
             <textarea id="mensaje" name="mensaje" rows="4" cols="30" ></textarea><br>
-            <span  id="mensERROR">D</span><br>  <!--span para mensajes de error-->
+            <span  id="mensERROR"></span><br>  <!--span para mensajes de error-->
 
             <label for="archivo">Adjuntar archivo o foto:</label><br>
-            <input type="file" id="archivo" name="archivo" maxlength="40"><br><br>
-            <br>
-            <label for=""></label>
+            <input type="file" id="archivo" name="archivo"><br><br>
+            
         </form>
+        <br><br>
         <button type="button" value="Enviar" onclick=" return Campos();">Enviar</button><br>
-        <span id="error">D</span><br>
+        <span id="error"></span><br>
         </div>
     </div>
 
@@ -104,7 +103,6 @@
             <li>viernes y sabado de 10:00hs a 21:00hs </li>
         </ul>
         </div>
-        <!--<hr>-->
         <br>  
         
             
