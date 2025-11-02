@@ -6,7 +6,7 @@ function Campos(){
     var tel=document.getElementById("tel").value.trim();
     var pais=document.getElementById("pais").value.trim();
     var mensaje=document.getElementById("mensaje").value;
-    var archv=document.getElementById("archivo").value;
+    var archv=document.getElementById("archivo");
     var error=document.getElementById("error");
 
 
@@ -38,14 +38,15 @@ function Nombre(nom){
     // Expresión regular para permitir solo letras y espacios, las barras delimitan la expresion regular,
     // el ^ indica el inicio de la cadena, el $ indica el final de la cadena, y los corchetes [] indican un conjunto de caracteres permitidos.
     
-    var caracteres=/^[A-Za-záéíóúÁÉÍÓÚñÑ\s-]+$/; 
+    var caracteres=/^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/; 
     var n=document.getElementById("nomERROR");
 
     if(nom.length<3){
-        n.innerHTML="<ul><li>El nombre debe tener al menos 3 caracteres</li><li>NO debe tener caracteres especiales</li><li>NO debe contener nombres irreales (ej: XD, gamer23, skibidi,etc...)</li></ul>";
+        n.innerHTML="<ul><li>El nombre debe tener al menos 3 caracteres</li><li>NO debe contener nombres irreales (ej: XD, gamer23, skibidi,etc...)</li></ul>";
     }
     else {
         if(caracteres.test(nom)){
+            n.innerHTML="";
             return true;
         }
         else{
@@ -56,13 +57,14 @@ function Nombre(nom){
 }
 
 function Ape(ape){
-    var caracteres=/^[A-Za-záéíóúÁÉÍÓÚñÑ\s-]+$/; 
+    var caracteres=/^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/; 
     var a=document.getElementById("apeERROR");
     if(ape.length<5){
         a.innerHTML="<ul><li>Minimo 5 caracteres en el apellido</li></ul>";
     }
     else {
         if(caracteres.test(ape)){
+            a.innerHTML="";
             return true;
         }
         else{
