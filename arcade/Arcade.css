@@ -24,7 +24,7 @@
    font-family:"lekton", monospace;
 }
 #cabecera{
-    background-color:#151524;
+   background-color: #151524;
   height: 65px;
   text-align: left;
   align-content: center;
@@ -66,19 +66,19 @@ justify-content: space-between;
 
 }
 .enlace{
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(47, 0, 255, 0.4);
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
  margin: 0 23px;
   text-decoration: none;
    padding: 10px 20px;
-    color:  rgba(0, 123, 255, 0.6);
+    color: rgba(0, 89, 255, 0.747);
      border: 2px solid transparent;
 }
 .enlace:hover {
-  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 6px 18px rgba(76, 0, 255, 0.6);
   color: white;
-   border-color: #007bff;
+   border-color: #5bb5ff;
 }
 #horarios {
    display: flex;
@@ -138,6 +138,11 @@ p:hover{
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
 
 }
+.Ten{
+text-decoration: none;
+  color: inherit;
+  display: block;
+}
 h2{
 
 
@@ -155,13 +160,13 @@ font-size: 33px;
 }
 .game {
   display: inline-block;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.10s ease, box-shadow 0.35s ease;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(255,255,255,0.18);
 }
 .game:hover{
  
-   box-shadow: 0px 1px 14px #9218f5;
+   box-shadow: 0px 1px 14px #537bff;
 }
 .game img {
   width: 270px;
@@ -170,7 +175,7 @@ font-size: 33px;
 }
 .game img:hover{
     transform: scale(1.11);
-  box-shadow: 0 0 15px #50a0fa6c, 0 0 25px #8c00ff7c;
+  box-shadow: 0 0 15px #5086fa6c, 0 0 25px #0077ff7c;
     cursor: pointer;
 }
 .menu{
@@ -181,8 +186,8 @@ font-size: 33px;
   backdrop-filter: blur(6px);
   width: fit-content;
   text-align: center;
-  border: 2px solid #fdff979d;
-  box-shadow: 0 0 20px #9554ffbb;
+  border: 2px solid #fffffff6;
+  box-shadow: 0 0 20px #4c5effbb;
 }
 .menu::after {
   content: "";
