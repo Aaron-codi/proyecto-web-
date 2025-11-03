@@ -62,19 +62,19 @@ justify-content: space-between;
 
 }
 .enlace{
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(76, 0, 255, 0.4);
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
  margin: 0 23px;
   text-decoration: none;
    padding: 10px 20px;
-    color:  rgba(0, 123, 255, 0.6);
+    color: rgba(0, 89, 255, 0.747);
      border: 2px solid transparent;
 }
 .enlace:hover {
-  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 6px 18px rgba(76, 0, 255, 0.6);
   color: white;
-   border-color: #007bff;
+   border-color: #5bb5ff;
 }
 #horarios {
    display: flex;
@@ -133,6 +133,11 @@ p:hover{
   margin-left: 100px;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
 
+}
+.Ten{
+text-decoration: none;
+  color: inherit;
+  display: block;
 }
 h2{
    display: flex;
