@@ -1,0 +1,19 @@
+body {
+    /* Quitamos los márgenes por defecto del navegador */
+    margin: 0;
+    /* Usamos Flexbox para centrar el contenido (el canvas) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hacemos que el body ocupe toda la altura de la ventana */
+    min-height: 100vh;
+    /* Color de fondo */
+    background-color: #222;
+}
+
+#pongCanvas {
+    /* Borde para que el canvas (la cancha) sea visible */
+    border: 2px solid white;
+    /* El color de fondo del canvas se establece a menudo en JS */
+    background-color: black;
+}
