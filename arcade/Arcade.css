@@ -136,6 +136,7 @@ p:hover{
   font-family: "Press Start 2P", monospace;
   margin-left: 50px;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
+ letter-spacing: 2px;
 
 }
 .Ten{
@@ -203,5 +204,58 @@ font-size: 33px;
 }
 .i{
   justify-content: center;
-  padding-right: 30px;
+  display: flex;
+}
+/* ---- Ajustes para monitores medianos (1366px a 1500px) ---- */
+@media (max-width: 1500px) {
+  #juegos {
+    gap: 35px;
+  }
+
+  .game img {
+    width: 290px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* ---- Notebooks más chicas (1100px a 1365px) ---- */
+@media (max-width: 1365px) {
+
+  #contenido {
+    padding-top: 60px;
+  }
+
+  #juegos {
+    gap: 28px;
+  }
+
+  .game img {
+    width: 270px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+}
+
+/* ---- Pantallas compactas (900px a 1099px) ---- */
+@media (max-width: 1099px) {
+  .menu {
+    padding: 25px 30px;
+  }
+
+  #juegos {
+    gap: 24px;
+  }
+
+  .game img {
+    width: 230px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }

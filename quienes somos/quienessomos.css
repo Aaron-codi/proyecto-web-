@@ -37,14 +37,17 @@ justify-content: space-between;
 }
 
 #contenido{
-   height: 750px;
+   height: 1000px;
   color:white;
   
+
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
   background-repeat: no-repeat;
   background-size: cover; 
   background-attachment: fixed;
   background-position: center;
+ 
+    font-size: 115%;
 
 }
 #pie{
@@ -128,7 +131,7 @@ margin: 0 0 6px 0;
 }
 .titulo{
   font-family: "Press Start 2P", monospace;
-  margin-left: 100px;
+  margin-left: 30px;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
 
 }
@@ -148,7 +151,7 @@ h2{
   background-color:#151524;
    margin: 10px 100px 100px 100px;
    padding:10px 0px 30px 25px;
-  box-shadow: 3px 2px 6px #0b1e33;
+   box-shadow: 4px 4px 3px #222222;
 
 }
 #relleno{
@@ -156,7 +159,7 @@ h2{
   background-color:#151524;
    margin: 0px 100px 300px 100px;
    padding:10px 0px 40px 25px;
-   box-shadow: 3px 2px 6px #0b1e33;
+   box-shadow: 4px 4px 3px #222222;
   
 }
 #puntos{

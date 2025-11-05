@@ -23,17 +23,20 @@
    padding: 0px;
    font-family:"lekton", monospace;
 }
-body{
-     overflow-x: hidden;
-
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 #cabecera{
-    background-color:#151524;
+  
+   background-color:#151524;
   height: 65px;
   text-align: left;
   align-content: center;
   color:rgb(244, 245, 205);
- padding: 15px 30px;
+ padding: 8px 14px;
 display: flex;
 justify-content: space-between;
 
@@ -142,14 +145,25 @@ p{
 }
 .titulo{
   font-family: "Press Start 2P", monospace;
-  margin-left:30px;
+  margin: 0;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
-
+ letter-spacing: 2px;
 }
 .Ten{
 text-decoration: none;
   color: inherit;
   display: block;
+}
+h2{
+
+   font-family: "Press Start 2P";
+  font-size: 20px;
+  color: #f8f8f8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.13);
+  text-shadow: 0px 0px 8px rgba(0, 204, 255, 0.7);
+  margin-top: 10px;
 }
 #juego{
   /*position:absolute;
@@ -181,13 +195,14 @@ img{
 
 }
 #scores{
-   text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
-  box-shadow: 0 4px 12px rgba(255, 0, 221, 0.4);
+  text-shadow: 1px 1px 3px rgba(196, 190, 190, 0.9);
+  box-shadow: 1px 4px 12px rgba(255, 238, 0, 0.4); 
   border-radius: 40px;
   margin: 0;
   padding: 8px 14px;
-  background-color: rgb(3, 44, 59);
-  align-self: flex-start; /* si querés a la izquierda dentro de #juego */
+  color: #151524;
+background-color: rgb(241, 241, 241); 
+ align-self: flex-start; /* si querés a la izquierda dentro de #juego */
 }
 #reset{
 
@@ -208,11 +223,9 @@ img{
   transition: box-shadow 0.3s ease;
 
 }
-.divC{
-  height: auto;
-    width: auto;
-padding-top: 10px;
-}
+
 .i{
   justify-content: center;
+  display: flex;
+  margin:0px;
 }

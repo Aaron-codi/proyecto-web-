@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="cabecera">
@@ -25,9 +26,11 @@
        
         <br><br>
         <div id="formulario">
-             <h2 class="s">Contacto</h2>
+             <h2 >Contacto</h2>
+             <br>
             <form action="#" method="post" >
-            <h2>Ingrese su datos</h2>
+            <h3>Ingrese su datos</h3>
+            <br>
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" class="input"  name="nombre" maxlength="15"><br>
             <span id="nomERROR"></span><br><!--span para mensajes de error-->
@@ -36,7 +39,7 @@
             <input type="text" id="ape" name="apellido" maxlength="20"><br>
             <span  id="apeERROR"></span><br><!--span para mensajes de error-->
             
-            <label for="pais">Pais:</label>
+            <label for="pais">Pais:</label><br>
             <select  id="pais" name="Pais">
                 <option value="" selected disabled>Seleccione su país</option>
                 <option value="Argentina">Argentina</option>
@@ -61,12 +64,14 @@
 
             
 
-            <label for="mensaje">Mensaje:</label><br>
+            <label for="mensaje">Explicanos tu comentario</label><br>
             <textarea id="mensaje" name="mensaje" rows="4" cols="30" ></textarea><br>
             <span  id="mensERROR"></span><br>  <!--span para mensajes de error-->
-
-            <label for="archivo">Adjuntar archivo o foto:</label><br>
-            <input type="file" id="archivo" name="archivo"><br><br>
+            
+            <label for="archivo">Adjuntar captura o foto:</label><br>
+            <input type="file" id="archivo" name="archivo">
+            <p class="adicional">Si nos envias una captura, podremos entender mejor tus comentarios.</p>
+            <br>
             
         </form>
         <br><br>

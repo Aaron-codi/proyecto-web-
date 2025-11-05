@@ -39,7 +39,7 @@ justify-content: space-between;
 
 #contenido{
 
-  height: 1000px;
+  height: 1300px;
   color:rgb(26, 24, 24);
   padding-bottom: 100px;
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
@@ -116,22 +116,12 @@ margin: 0 0 6px 0;
 
  
 }
-p {
-  color:rgb(255, 255, 255);
-  text-align: left;
-  font-size: 25px;
-  transition: text-decoration 0.5s ease;
-}
-p:hover{
-   text-decoration: underline 2px rgba(0, 123, 255, 0.6);
-  color: white;
-   border-color: #007bff;
-   text-decoration-line: discrete;
-}
+
 .titulo{
   font-family: "Press Start 2P", monospace;
-  margin-left: 100px;
+  margin-left: 30px;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
+ letter-spacing: 2px;
 
 }
 .Ten{
@@ -140,18 +130,15 @@ text-decoration: none;
   display: block;
 }
 h2{
-   display: flex;
+    color: #1d1d1d;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-      align-items: center;
-      box-shadow: 10px #007bff;
+    align-items: center;
+    padding: 0px 50px 0px 10px; 
+    text-shadow: 1px 5px 2px #cfcfcf; 
+    font-size: 200%;
 }
-/*input, select, textarea {
-  background-position: 50% 50%;
-  background-image: url("../arcade/imagenes/fondo7.jpg");
-  color: cornflowerblue;
-
-}*/
 #horarios {
    display: flex;
  flex-direction: column;      
@@ -204,23 +191,7 @@ margin: 0 0 6px 0;
    border-color: #007bff;
    text-decoration-line: discrete;
 }
-label {
-  align-content: center;
-  color: rgb(39, 121, 121);
-  font-size: 25px;
-}
-#formulario{
 
-   background-color:#ffffff;
-   margin: 0px 250px 250px 250px;
-   padding-left: 25px;
-   text-align: justify;
-   padding-bottom: 50px;
-   padding-top: 25px;
-   border: 1px black;
-   border-radius: 3px;
-     
-}
 #enlaces{
   display: flex;
   gap: 12px;
@@ -228,12 +199,35 @@ label {
   justify-content: center;
  
 }
+label {
+  align-content: center;
+  color: rgb(72, 73, 73);
+  font-size: 27px;
+  text-shadow: 2px 1px 2px #3b3b3b;
+}
+#formulario{
+  box-shadow: 5px 5px 2px rgba(148, 148, 148, 0.774);
+
+   background-color:#ffffff;
+   margin: 0px 370px 300px 370px;
+  padding: 10px 50px 10px 80px;   
+  text-align: start;
+   padding-bottom: 50px;
+   padding-top: 25px;
+   border: 1px black;
+   border-radius: 5px;
+     
+}
 #formulario input label textarea label{
     width: 300px; 
   height: 40px;
 }
 #formulario input{
-  border-radius: 20px;
+  border-radius: 5px;
+  height: 35px;
+  width: 450px;
+  box-shadow: 3px 3px 2px rgba(148, 148, 148, 0.774);
+
 }
 
 p {
@@ -252,4 +246,15 @@ span {
 
 .i{
   justify-content: center;
+  display: flex;
 }
+.adicional {
+  color:rgb(66, 66, 66);
+}
+h3{
+  text-shadow: 1px 1px 2px #3b3b3b; 
+    font-size: 170%;
+    color: #3b3b3b;
+    display: flex;
+}
+

@@ -1,16 +1,174 @@
-body {
-    /* Quitamos los márgenes por defecto del navegador */
-    margin: 0;
-    /* Usamos Flexbox para centrar el contenido (el canvas) */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Hacemos que el body ocupe toda la altura de la ventana */
-    min-height: 100vh;
-    /* Color de fondo */
-    background-color: #222;
+.lekton-regular {
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.lekton-bold {
+  font-family: "Lekton", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lekton-regular-italic {
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family:"lekton", monospace;
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#cabecera{
+  
+   background-color:#151524;
+  height: 65px;
+  text-align: left;
+  align-content: center;
+  color:rgb(244, 245, 205);
+ padding: 8px 14px;
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+}
+
+#contenido{
+
+  height: 750px;
+  color:white;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  
+  background-image:  url('../arcade/imagenes/fondo7.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center;
+
+}
+#pie{
+   background-color: #151524;
+  height: auto;               /* permitir que crezca según contenido */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 40px;         /* separación desde los bordes */
+  box-sizing: border-box;
+  color: white;
+  gap: 20px;
+
+}
+.enlace{
+  box-shadow: 0 4px 12px rgba(76, 0, 255, 0.4);
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+ margin: 0 23px;
+  text-decoration: none;
+   padding: 10px 20px;
+    color: rgba(0, 89, 255, 0.747);
+     border: 2px solid transparent;
+}
+.enlace:hover {
+  box-shadow: 0 6px 18px rgba(76, 0, 255, 0.6);
+  color: white;
+   border-color: #5bb5ff;
+}
+#horarios {
+   display: flex;
+ flex-direction: column;      
+  justify-content: center;    
+  align-items: flex-end;       
+  gap: 6px;                   
+  align-self: center;
+    margin-right: 0;
+ flex: 0 0 auto;
+}
+#horarios h4 {
+margin: 0 0 6px 0;
+  align-self: center;      
+  width: 100%;             
+  text-align: center; 
+}
+
+#horarios ul {
+  margin: 0;
+  padding-left: 1em;         
+  list-style-position: inside; 
+}
+
+#horarios ul li {
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+#redes{
+      display: flex;
+   
+  align-items:center;      
+  margin-left: 20px;
+    justify-content: flex-start; 
+  flex: 0 0 auto;             
+
+   gap: 12px;    
+
+ 
+}
+p{
+    font-size: 25px;
+
+}
+.red {
+  color:rgb(255, 255, 255);
+  text-align: left;
+  font-size: 25px;
+  transition: text-decoration 0.5s ease;
+}
+.red:hover{
+   text-decoration: underline 2px rgba(0, 123, 255, 0.6);
+  color: white;
+   border-color: #007bff;
+   text-decoration-line: discrete;
+}
+.titulo{
+  font-family: "Press Start 2P", monospace;
+  margin: 0;
+    text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
+ letter-spacing: 2px;
+}
+.Ten{
+text-decoration: none;
+  color: inherit;
+  display: block;
+}
+h2{
+
+   font-family: "Press Start 2P";
+  font-size: 20px;
+  color: #f8f8f8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.13);
+  text-shadow: 0px 0px 8px rgba(0, 204, 255, 0.7);
+  margin-top: 10px;
+}
+.i{
+  justify-content: center;
+  display: flex;
+}
 #pongCanvas {
     /* Borde para que el canvas (la cancha) sea visible */
     border: 2px solid white;

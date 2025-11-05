@@ -23,29 +23,36 @@
    padding: 0px;
    font-family:"lekton", monospace;
 }
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #cabecera{
-   background-color: #151524;
+  
+   background-color:#151524;
   height: 65px;
   text-align: left;
   align-content: center;
   color:rgb(244, 245, 205);
- 
+ padding: 8px 14px;
 display: flex;
 justify-content: space-between;
-  padding-top: 25px;
 
+align-items: center;
 }
 
 #contenido{
 
-  height: 550px;
+  height: 750px;
   color:white;
- 
-   display: flex;
+
+  display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
-
+  padding-top: 0px;
+  
   background-image:  url('../arcade/imagenes/fondo7.jpg') ;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -55,18 +62,18 @@ justify-content: space-between;
 }
 #pie{
    background-color: #151524;
-  height: 110px;              
+  height: auto;               /* permitir que crezca según contenido */
   display: flex;
-  align-items: center;       
+  align-items: center;
   justify-content: space-around;
-  padding: 0 20px 0 30px;           
+  padding: 12px 40px;         /* separación desde los bordes */
   box-sizing: border-box;
- color: white;
-  
+  color: white;
+  gap: 20px;
 
 }
 .enlace{
-  box-shadow: 0 4px 12px rgba(47, 0, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(76, 0, 255, 0.4);
   transition: box-shadow 0.3s ease;
   border-radius: 8px;
  margin: 0 23px;
@@ -120,13 +127,17 @@ margin: 0 0 6px 0;
 
  
 }
-p {
+p{
+    font-size: 25px;
+
+}
+.red {
   color:rgb(255, 255, 255);
   text-align: left;
   font-size: 25px;
   transition: text-decoration 0.5s ease;
 }
-p:hover{
+.red:hover{
    text-decoration: underline 2px rgba(0, 123, 255, 0.6);
   color: white;
    border-color: #007bff;
@@ -134,18 +145,29 @@ p:hover{
 }
 .titulo{
   font-family: "Press Start 2P", monospace;
-  margin-left: 50px;
+  margin: 0;
     text-shadow: 1px 3px 3px rgba(222, 171, 243, 0.9);
-
+ letter-spacing: 2px;
 }
 .Ten{
 text-decoration: none;
   color: inherit;
   display: block;
 }
+h2{
+
+   font-family: "Press Start 2P";
+  font-size: 20px;
+  color: #f8f8f8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.13);
+  text-shadow: 0px 0px 8px rgba(0, 204, 255, 0.7);
+  margin-top: 10px;
+}
 .i{
   justify-content: center;
-  padding-right: 30px;
+  display: flex;
 }
 
 
