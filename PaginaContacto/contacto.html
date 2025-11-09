@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+        function disableButton(){
+            document.getElementById("botoncito").disabled = true;
+        }
+        window.onload = disableButton;
+    
+    </script>
 </head>
 <body>
     <div id="cabecera">
@@ -33,17 +40,16 @@
             <h3>Ingrese sus datos</h3>
             <br>
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" class="input"  name="nombre" maxlength="15"><br>
+            <input type="text" id="nombre" class="input"  name="nombre" maxlength="15" oninput="RevisarCampos()"><br>
             <span id="nomERROR"></span><br><!--span para mensajes de error-->
 
             <label for="ape">Apellido:</label><br>
-            <input type="text" id="ape" name="apellido" maxlength="20"><br>
+            <input type="text" id="ape" name="apellido" maxlength="20" oninput="RevisarCampos()"><br>
             <span  id="apeERROR"></span><br><!--span para mensajes de error-->
             
             <label for="pais">Pais:</label><br>
-            <select  id="pais" name="Pais">
-                <option value="" selected disabled>Seleccione su país</option>
-                <option value="Argentina">Argentina</option>
+            <select  id="pais" name="Pais" oninput="RevisarCampos()">
+                <option value="Argentina" selected>Argentina</option>
                 <option value="Brasil">Brasil</option>
                 <option value="Chile">Chile</option>
                 <option value="Colombia">Colombia</option>
@@ -56,17 +62,17 @@
             <span id="paisERROR"></span><br><!--span para mensajes de error-->
 
             <label for="tel">Telefono:</label><br>
-            <input type="tel" id="tel" name="telefono"  maxlength="15"><br>
+            <input type="tel" id="tel" name="telefono"  maxlength="15" oninput="RevisarCampos()"><br>
             <span  id="telERROR"></span><br><!--span para mensajes de error-->
 
             <label for="mail">Correo Electrónico:</label><br>
-            <input type="email" id="mail" name="email" maxlength="40"><br>
+            <input type="email" id="mail" name="email" maxlength="40" oninput="RevisarCampos()"><br>
             <span  id="emailERROR"></span><br><!--span para mensajes de error-->
 
             
 
             <label for="mensaje">Explicanos tu comentario</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="30" ></textarea><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30" oninput="RevisarCampos()"></textarea><br>
             <span  id="mensERROR"></span><br>  <!--span para mensajes de error-->
             
             <label for="archivo">Adjuntar captura o foto:</label><br>
@@ -76,7 +82,7 @@
             
         </form>
         <br><br>
-        <button type="button" value="Enviar" onclick=" return Campos();">Enviar</button><br>
+        <button type="button" value="Enviar" id="botoncito" onclick=" return Campos();" >Enviar</button><br>
         <span id="error"></span><br>
     </div>   
     </div>
