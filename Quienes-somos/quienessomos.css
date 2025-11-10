@@ -141,16 +141,19 @@ text-decoration: none;
   display: block;
 }
 h2{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-      align-items: center;
+    font-family: "Press Start 2P", monospace;
+  font-size: 20px;
+  text-align: center;
+  color: #fffdde;
+  text-shadow: 0 0 12px #202529, 0 0 20px #bc7efa;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 #nombres{
   border-radius:5px;
   background-color:#151524;
    margin: 10px 100px 100px 100px;
-   padding:10px 0px 30px 25px;
+   padding:15px 25px 30px 35px;
    box-shadow: 4px 4px 3px #222222;
 
 }
@@ -158,7 +161,7 @@ h2{
     border-radius:5px;
   background-color:#151524;
    margin: 0px 100px 300px 100px;
-   padding:10px 0px 40px 25px;
+   padding:15px 25px 40px 35px;
    box-shadow: 4px 4px 3px #222222;
   
 }
