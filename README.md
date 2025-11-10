@@ -17,7 +17,7 @@ Las paginas que contiene el proyecto MINI ARCADE son las siguientes:
 - Tetris.
 - Quienes-somos.
 
-##Juegos:
+## Juegos:
 1. Mini Galaga 👾.
 2. Ping Pong 🏓.
 3. Snake 🐍.
