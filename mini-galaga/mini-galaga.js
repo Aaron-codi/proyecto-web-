@@ -250,7 +250,7 @@ function gameOver() {
   context.textBaseline = "middle";
   context.fillText("GAME OVER", board.width / 2, board.height / 2);
   
-  // 🔹 Opcional: mostrar el puntaje final
+  // mostrar el puntaje final
   context.font = "20px Lekton";
   context.fillText("Puntuación: " + puntuacion, board.width / 2, board.height / 2 + 50);
 }

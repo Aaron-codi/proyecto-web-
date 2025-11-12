@@ -6,6 +6,12 @@ Proyecto final de programacion estatica y laboratorio web.
 
 Este proyecto nombrado MINI ARCADE consiste en una pagina la cual contiene juegos que son 1 player. Estos juegos estan basados en los originales juegos retro como por ejemplo Galaga o tetris.
 
+## Integrantes:
+- Sophia Benitez.
+- Roman Avilez.
+- Aaron Cuevas.
+- Thiago Ledesma.
+
 ## Paginas 💻
 
 Las paginas que contiene el proyecto MINI ARCADE son las siguientes:
